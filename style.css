@@ -15,7 +15,6 @@ body {
     text-align: center;
     border: 2px solid #c00000;
     margin-bottom: 30px;
-    line-height: 1.6;
 }
 
 .disclaimer-header strong {
@@ -43,10 +42,6 @@ body {
     outline: none;
 }
 
-#searchInput:focus {
-    border-color: #c00000;
-}
-
 h2 {
     color: #c00000;
     border-left: 5px solid #c00000;
@@ -60,15 +55,12 @@ table {
     border-collapse: collapse;
     margin-top: 20px;
     background-color: #0a0a0a;
-    table-layout: fixed;
 }
 
 th, td {
     border: 1px solid #333;
     padding: 12px;
     text-align: left;
-    word-break: break-all;
-    overflow-wrap: break-word;
 }
 
 th {
@@ -77,25 +69,11 @@ th {
     font-weight: bold;
 }
 
-tbody tr:hover {
-    background-color: rgba(204, 0, 0, 0.05);
-}
-
 td:first-child {
     color: #ff0000;
     font-weight: bold;
     font-family: "Times New Roman", serif;
     font-size: 18px;
-}
-
-td:nth-child(3) {
-    font-size: 12px;
-    color: #888;
-}
-
-.highlight {
-    color: #9f8cf4;
-    font-weight: bold;
 }
 
 .modal-overlay {
@@ -116,8 +94,15 @@ td:nth-child(3) {
     padding: 40px;
     border: 1px solid #333;
     text-align: center;
-    max-width: 400px;
+    max-width: 500px;
     width: 90%;
+    box-sizing: border-box;
+}
+
+#authMessage p {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    white-space: nowrap;
 }
 
 #passwordInput {
@@ -138,28 +123,42 @@ button {
     border: none;
     cursor: pointer;
     font-size: 16px;
+    white-space: nowrap;
 }
 
 @media screen and (max-width: 600px) {
     body {
         padding: 10px;
     }
-    
+
+    .disclaimer-header {
+        font-size: 12px;
+        padding: 15px 10px;
+    }
+
     table {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     th, td {
-        padding: 8px 4px;
+        padding: 8px 5px;
     }
 
     td:first-child {
-        font-size: 16px;
+        font-size: 15px;
     }
 
-    /* 検索バーの文字を大きくしてドアップ防止 */
-    #searchInput {
+    .modal-content {
+        padding: 40px 15px;
+    }
+
+    #authMessage p {
         font-size: 16px;
-        padding: 12px;
+        white-space: normal;
+        word-break: keep-all;
+    }
+
+    #authMessage span {
+        display: inline-block;
     }
 }
