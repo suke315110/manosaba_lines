@@ -2,13 +2,13 @@
     const SALT = "【今これを読んでいるお前も死ねばいい】"; 
     const HASHED_PASSWORD = "c48476ef83f5ec26852d1fc7ed482dc572731adee4c24cace2881003f0eecda1"; 
 
-    let dictionaryData = [];
+    let linesData = [];
 
     window.onload = () => {
-        const auth = sessionStorage.getItem('dictionary_auth');
+        const auth = sessionStorage.getItem('lines_auth');
         if (auth === "true") {
             document.getElementById('authModal').style.display = 'none';
-            loadDictionary();
+            loadLines();
         } else {
             document.getElementById('authModal').style.display = 'flex';
         }
@@ -27,9 +27,9 @@
         const inputHash = await digestMessage(inputWithSalt);
 
         if (inputHash === HASHED_PASSWORD) {
-            sessionStorage.setItem('dictionary_auth', "true");
+            sessionStorage.setItem('lines_auth', "true");
             document.getElementById('authModal').style.display = 'none';
-            loadDictionary();
+            loadLines();
         } else {
             handleAuthFailure();
         }
@@ -49,11 +49,11 @@
         window.location.href = "https://manosaba.com/";
     };
 
-    function loadDictionary() {
-        fetch('dictionary.json')
+    function loadLines() {
+        fetch('lines.json')
             .then(response => response.json())
             .then(data => {
-                dictionaryData = data;
+                linesData = data;
                 displayInitialTables();
                 setupSearch();
             })
@@ -64,11 +64,13 @@
         const normalBody = document.getElementById('normalTableBody');
         const othersBody = document.getElementById('othersTableBody');
         
-        dictionaryData.forEach(item => {
-            const row = createRow(item);
+        linesData.forEach(item => {
+            let row;
             if (item.category === 'normal') {
+                row = createRow(item);
                 normalBody.appendChild(row);
             } else {
+                row = createOthersRow(item);
                 othersBody.appendChild(row);
             }
         });
@@ -76,12 +78,21 @@
 
     function createRow(item) {
         const tr = document.createElement('tr');
-        const trans = Array.isArray(item.translation) ? item.translation.join('、') : item.translation;
         tr.innerHTML = `
-            <td>${item.spell}</td>
-            <td>${item.reading}</td>
-            <td>${item.type}</td>
-            <td>${trans}</td>
+            <td>${item.line}</td>
+            <td>${item.character}</td>
+            <td>${item.act || '-'}</td>
+            <td>${item.chapter || '-'}</td>
+            <td>${item.note || '-'}</td>
+        `;
+        return tr;
+    }
+
+    function createOthersRow(item) {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td>${item.line}</td>
+            <td>${item.character}</td>
             <td>${item.note || '-'}</td>
         `;
         return tr;
@@ -89,41 +100,47 @@
 
     function setupSearch() {
         const searchInput = document.getElementById('searchInput');
+        let timer;
         searchInput.addEventListener('input', (e) => {
-            const query = e.target.value.trim();
-            const normalSection = document.getElementById('normalSection');
-            const othersSection = document.getElementById('othersSection');
-            const searchResultSection = document.getElementById('searchResultSection');
-
-            if (query === "") {
-                normalSection.style.display = 'block';
-                othersSection.style.display = 'block';
-                searchResultSection.style.display = 'none';
-            } else {
-                normalSection.style.display = 'none';
-                othersSection.style.display = 'none';
-                searchResultSection.style.display = 'block';
-                search(query);
-            }
+            clearTimeout(timer)
+            timer = setTimeout(() => {
+                window.search();
+            },500);
         });
     }
 
-    function search(query) {
-        const q = toKata(query).toLowerCase();
-        const results = dictionaryData.filter(item => {
-            const spellLower = (item.spell || "").toLowerCase();
-            const spellClean = spellLower.replace(/'|-|~| |･/g, "");
-            const readingClean = (item.reading || "").replace(/'|-|~|　/g, "");
-            const transJoined = (Array.isArray(item.translation) ? item.translation.join(' ') : (item.translation || "")) + ' ' + (item.keywords || '');
-            const transKata = toKata(transJoined);
-            const transClean = transKata.replace(/'|-|~/g, "");
+    window.search = function() {
+        const query = document.getElementById('searchInput').value.toLowerCase();
+        const charFilter = document.getElementById('characterFilter').value;
+        const chapFilter = document.getElementById('chapterFilter').value;
+        const actFilter = document.getElementById('actFilter').value;
 
-            return spellLower.includes(q) || 
-                   spellClean.includes(q) || 
-                   item.reading.includes(q) || 
-                   readingClean.includes(q) || 
-                   transKata.includes(q) || 
-                   transClean.includes(q);
+        const normalSection = document.getElementById('linesSection');
+        const othersSection = document.getElementById('othersSection');
+        const searchResultSection = document.getElementById('searchResultSection');
+
+        const isFiltering = query !== "" || charFilter !== "" || chapFilter !== "" || actFilter !== "";
+
+        if (!isFiltering) {
+            linesSection.style.display = 'block';
+            othersSection.style.display = 'block';
+            searchResultSection.style.display = 'none';
+            return;
+        } else {
+            linesSection.style.display = 'none';
+            othersSection.style.display = 'none';
+            searchResultSection.style.display = 'block';
+        }
+
+        const results = linesData.filter(item => {
+            const matchesQuery = !query || [item.character, item.line, item.note].some(text => 
+                text && text.toLowerCase().includes(query)
+            );
+            const matchesChar = !charFilter || item.character === charFilter;
+            const matchesChap = !chapFilter || String(item.chapter) === chapFilter;
+            const matchesAct = !actFilter || String(item.act) === actFilter;
+
+            return matchesQuery && matchesChar && matchesChap && matchesAct;
         });
         renderSearchResults(results);
     }
@@ -143,5 +160,4 @@
             });
         }
     }
-
 })();
