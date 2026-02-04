@@ -9,8 +9,8 @@
     </head>
     <body>
         <div class="disclaimer-header">
-            <p><strong style="color: #ff0000; font-size: 14px;">【非公式ファンサイト】</strong>掲載情報の著作権はAcacia様及びRe,AER様に帰属します。
-            データは随時更新中です。詳細は<a href="https://manosaba.com/guidelines" target="_blank">gDie公式</a>をご確認ください。</p>
+            <p><strong style="color: #ff0000; font-size: 14px;">【非公式ファンサイト】ネタバレあり</strong>掲載情報の著作権はAcacia様及びRe,AER様に帰属します。
+            データは随時更新中です。詳細は<a href="https://manosaba.com/guidelines" target="_blank">gDie公式ガイドライン</a>をご確認ください。ソート機能はPC版サイトのみです。</p>
             <p>※本ページは関係者内での閲覧を目的としており、情報の無断転載・共有を固く禁じます。</p>
         </div>
 
@@ -61,10 +61,10 @@
                 <table id="normalTable">
                     <thead>
                         <tr>
-                            <th>セリフ</th>
-                            <th>キャラクター</th>
-                            <th>章</th>
-                            <th>話</th>
+                            <th onclick="sortTable('normalTable', 0)" style="cursor:pointer">セリフ ↕</th>
+                            <th onclick="sortTable('normalTable', 1)" style="cursor:pointer">キャラクター ↕</th>
+                            <th onclick="sortTable('normalTable', 2)" style="cursor:pointer">章 ↕</th>
+                            <th onclick="sortTable('normalTable', 3)" style="cursor:pointer">話 ↕</th>
                             <th>備考</th>
                         </tr>
                     </thead>
@@ -77,8 +77,8 @@
                 <table id="othersTable">
                     <thead>
                         <tr>
-                            <th>セリフ</th>
-                            <th>キャラクター</th>
+                            <th onclick="sortTable('othersTable', 0)" style="cursor:pointer">セリフ ↕</th>
+                            <th onclick="sortTable('othersTable', 1)" style="cursor:pointer">キャラクター ↕</th>
                             <th>備考</th>
                         </tr>
                     </thead>
@@ -91,10 +91,10 @@
                 <table id="searchResultTable">
                     <thead>
                         <tr>
-                            <th>セリフ</th>
-                            <th>キャラクター</th>
-                            <th>章</th>
-                            <th>話</th>
+                            <th onclick="sortTable('searchResultTable', 0)" style="cursor:pointer">セリフ ↕</th>
+                            <th onclick="sortTable('searchResultTable', 1)" style="cursor:pointer">キャラクター ↕</th>
+                            <th onclick="sortTable('searchResultTable', 2)" style="cursor:pointer">章 ↕</th>
+                            <th onclick="sortTable('searchResultTable', 3)" style="cursor:pointer">話 ↕</th>
                             <th>備考</th>
                         </tr>
                     </thead>
