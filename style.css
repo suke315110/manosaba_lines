@@ -39,53 +39,39 @@ body {
     background-color: #000;
     color: #fff;
     border: 1px solid #444;
-    border-left: 4px solid #c00000;
+    border-radius: 5px;
     outline: none;
-    letter-spacing: 0.1em;
 }
 
 #searchInput:focus {
-    border-color: #ff0000;
-    box-shadow: 0 0 10px rgba(204, 0, 0, 0.2);
-}
-
-section {
-    max-width: 1000px;
-    margin: 0 auto 60px auto;
+    border-color: #c00000;
 }
 
 h2 {
-    font-size: 20px;
-    color: #fff;
+    color: #c00000;
     border-left: 5px solid #c00000;
-    padding: 5px 15px;
-    margin-bottom: 30px;
-    letter-spacing: 0.2em;
-    background: linear-gradient(90deg, #2a0000 0%, transparent 100%);
+    padding-left: 15px;
+    margin-top: 50px;
+    font-size: 20px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: rgba(255, 255, 255, 0.03);
-    table-layout: auto;
+    margin-top: 20px;
+    background-color: #0a0a0a;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: left;
 }
 
 th {
-    background-color: #000;
-    color: #999;
-    padding: 15px;
-    text-align: left;
-    font-size: 13px;
-    border-bottom: 2px solid #333;
-    text-transform: uppercase;
-    white-space: nowrap;
-}
-
-td {
-    padding: 15px;
-    border-bottom: 1px solid #333;
-    font-size: 15px;
+    background-color: #222;
+    color: #c00000;
+    font-weight: bold;
     white-space: nowrap;
 }
 
@@ -133,35 +119,75 @@ td:nth-child(3) {
 .modal-content {
     background: #1a1a1a;
     padding: 40px;
-    border: 1px solid #c00000;
+    border: 1px solid #333;
     text-align: center;
-    box-shadow: 0 0 30px rgba(204, 0, 0, 0.3);
+    max-width: 400px;
+    width: 90%;
 }
 
 #passwordInput {
+    padding: 10px;
+    width: 80%;
     background: #000;
     color: #fff;
     border: 1px solid #444;
-    padding: 10px;
-    margin: 20px 0;
-    width: 200px;
-    display: inline-block;
+    margin-bottom: 20px;
 }
 
-.modal-content button {
+button {
+    padding: 10px 20px;
     background: #c00000;
     color: #fff;
     border: none;
-    padding: 10px 30px;
     cursor: pointer;
-    font-family: serif;
-    vertical-align: middle;
+}
+
+button:hover {
+    background: #ff0000;
 }
 
 @media screen and (max-width: 600px) {
-    body { padding: 10px; }
-    #searchInput { width: 90%; }
-    th, td { padding: 10px; font-size: 13px; }
-    td:first-child { font-size: 16px; }
-    section { overflow-x: auto; }
+    thead {
+        display: none;
+    }
+
+    table, tbody, tr, td {
+        display: block;
+        width: 100%;
+    }
+
+    tr {
+        margin-bottom: 20px;
+        border: 1px solid #444;
+        background: #222;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    td {
+        border: none !important;
+        padding: 5px 10px !important;
+        text-align: left !important;
+        font-size: 14px;
+    }
+
+    td:first-child {
+        font-size: 20px !important;
+        border-bottom: 1px solid #c00000 !important;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    td:last-child {
+        color: #bbb;
+        font-size: 12px;
+        margin-top: 5px;
+        min-width: unset !important;
+    }
+
+    td:nth-child(4)::before {
+        content: "意味: ";
+        color: #888;
+        font-size: 11px;
+    }
 }
