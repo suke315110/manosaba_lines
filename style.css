@@ -135,13 +135,7 @@ button {
         padding: 10px;
     }
     
-    .modal-content {
-        width: 100%;
-        padding: 20px 10px;
-    }
-
     #authMessage p {
-        font-size: 16px;
         white-space: nowrap;
     }
 }
