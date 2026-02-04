@@ -82,7 +82,7 @@
             <td>${item.reading}</td>
             <td>${item.type}</td>
             <td>${trans}</td>
-            <td>${item.note || ''}</td>
+            <td>${item.note || '-'}</td>
         `;
         return tr;
     }
@@ -143,4 +143,5 @@
             });
         }
     }
+
 })();
