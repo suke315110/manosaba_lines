@@ -3,73 +3,9 @@
         "character":"桜羽エマ",
         "act":"1",
         "chapter":"1",
-        "line":"――ちがう！",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"桜羽エマ",
-        "act":"1",
-        "chapter":"1",
-        "line":"え、な、なに、ここ……？",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"桜羽エマ",
-        "act":"1",
-        "chapter":"1",
-        "line":"ろ、牢屋……！？なんで！？",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"桜羽エマ",
-        "act":"1",
-        "chapter":"1",
-        "line":"（明日から高校生だって……ワクワクしながら眠ったはず）",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"桜羽エマ",
-        "act":"1",
-        "chapter":"1",
-        "line":"（眠る前に覚えてるのは……壁にかけてあったピカピカの高校の制服）",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"桜羽エマ",
-        "act":"1",
-        "chapter":"1",
         "line":"（いちからぜんぶやりなおすんだって、決めて……）",
         "category":"normal",
-        "note":""
-    },
-    {
-        "character":"桜羽エマ",
-        "act":"1",
-        "chapter":"1",
-        "line":"（これって悪夢の続き……？）",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"桜羽エマ",
-        "act":"1",
-        "chapter":"1",
-        "line":"ねえ、ここどこなのかな！？",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"遠野ハンナ",
-        "act":"1",
-        "chapter":"1",
-        "line":"何を考えていますの！？わたくしをこんなところに閉じ込めるなんて！",
-        "category":"normal",
-        "note":""
+        "note":"高校デビューエマ"
     },
     {
         "character":"佐伯ミリア",
@@ -77,7 +13,7 @@
         "chapter":"1",
         "line":"少女監禁とか、犯罪だよこれ！誰だか知らないけど、人生終わるよ！？",
         "category":"normal",
-        "note":""
+        "note":"この状況で閉じ込めた側の人生について言ってるのは優しさが出てる。"
     },
     {
         "character":"紫藤アリサ",
@@ -85,7 +21,7 @@
         "chapter":"1",
         "line":"ざけんなぶっ殺すぞおらぁ！出せぇ！！",
         "category":"normal",
-        "note":""
+        "note":"シェリーの怪力のせいで影薄いけどアリサも喧嘩は強い。"
     },
     {
         "character":"桜羽エマ",
@@ -93,7 +29,7 @@
         "chapter":"1",
         "line":"（……よかった、閉じ込められているのはボクだけじゃない）",
         "category":"normal",
-        "note":""
+        "note":"こんな状況でも一人じゃないと分かって安心するのはエマって感じ。"
     },
     {
         "character":"二階堂ヒロ",
@@ -109,95 +45,7 @@
         "chapter":"1",
         "line":"騒がしいのは正しくない。",
         "category":"normal",
-        "note":""
-    },
-    {
-        "character":"桜羽エマ",
-        "act":"1",
-        "chapter":"1",
-        "line":"——！！",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"桜羽エマ",
-        "act":"1",
-        "chapter":"1",
-        "line":"（ウソでしょ……二階堂ヒロ……ちゃん？）",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"二階堂ヒロ",
-        "act":"1",
-        "chapter":"1",
-        "line":"何故、君がここに？",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"桜羽エマ",
-        "act":"1",
-        "chapter":"1",
-        "line":"あ……。",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"二階堂ヒロ",
-        "act":"1",
-        "chapter":"1",
-        "line":"ここはどこだ？",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"桜羽エマ",
-        "act":"1",
-        "chapter":"1",
-        "line":"あ、あのね、ヒロちゃ……。",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"桜羽エマ",
-        "act":"1",
-        "chapter":"1",
-        "line":"（え、何！？フ、フクロウの化け物……！？）",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"ゴクチョー",
-        "act":"1",
-        "chapter":"1",
-        "line":"あ……もしもし……映像って見えてます……？何せ古くて故障が多いので……やれやれ。",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"ゴクチョー",
-        "act":"1",
-        "chapter":"1",
-        "line":"私、ゴクチョーと申します。",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"ゴクチョー",
-        "act":"1",
-        "chapter":"1",
-        "line":"詳しい説明がしたいので、ラウンジに集合してください。",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"ゴクチョー",
-        "act":"1",
-        "chapter":"1",
-        "line":"監房の鍵を開けますので、看守の後についてきてください。",
-        "category":"normal",
-        "note":""
+        "note":"Xファンコミュニティのせいでヒロの印象が汚染されてます。"
     },
     {
         "character":"ゴクチョー",
@@ -205,7 +53,7 @@
         "chapter":"1",
         "line":"抵抗とかは自由なんですが……命とかなくなっちゃうので……はい……。",
         "category":"normal",
-        "note":""
+        "note":"慎ましい振る舞いなフリーザ様。"
     },
     {
         "character":"桜羽エマ",
@@ -213,23 +61,7 @@
         "chapter":"1",
         "line":"ゴクチョー……？看守……？",
         "category":"normal",
-        "note":""
-    },
-    {
-        "character":"桜羽エマ",
-        "act":"1",
-        "chapter":"1",
-        "line":"ひっ……。",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"桜羽エマ",
-        "act":"1",
-        "chapter":"1",
-        "line":"ヒ、ヒロちゃ……。",
-        "category":"normal",
-        "note":""
+        "note":"この看守の言い方好き。"
     },
     {
         "character":"佐渡ココ",
@@ -237,7 +69,7 @@
         "chapter":"1",
         "line":"ぎゃああぁ！触んな化け物ぉ！キモいから！わかった、わかりました、行くから！！",
         "category":"normal",
-        "note":""
+        "note":"ココの罵倒は……いけますね。"
     },
     {
         "character":"二階堂ヒロ",
@@ -248,28 +80,12 @@
         "note":""
     },
     {
-        "character":"桜羽エマ",
-        "act":"1",
-        "chapter":"1",
-        "line":"っ……！",
-        "category":"normal",
-        "note":""
-    },
-    {
         "character":"二階堂ヒロ",
         "act":"1",
         "chapter":"1",
         "line":"気安く触れないでほしい。忘れてもらっては困る。私は君が嫌いなんだ。",
         "category":"normal",
-        "note":""
-    },
-    {
-        "character":"桜羽エマ",
-        "act":"1",
-        "chapter":"1",
-        "line":"ま、待ってよヒロちゃん！",
-        "category":"normal",
-        "note":""
+        "note":"これ言われてめげないエマは強い。"
     },
     {
         "character":"桜羽エマ",
@@ -277,79 +93,7 @@
         "chapter":"1",
         "line":"（良かった……全員中学の頃の同級生だったらどうしようかと……）",
         "category":"normal",
-        "note":""
-    },
-    {
-        "character":"桜羽エマ",
-        "act":"1",
-        "chapter":"1",
-        "line":"（あの異形が看守ってことなのかな）",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"桜羽エマ",
-        "act":"1",
-        "chapter":"1",
-        "line":"ヒロちゃん！",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"二階堂ヒロ",
-        "act":"1",
-        "chapter":"1",
-        "line":"……。",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"桜羽エマ",
-        "act":"1",
-        "chapter":"1",
-        "line":"あの、あのね。色々あったけど、ヒロちゃんにまた会えてよかった。",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"桜羽エマ",
-        "act":"1",
-        "chapter":"1",
-        "line":"ボク、変わったんだよ。もう前のボクじゃない。ヒロちゃんと友だちになりたいんだ。",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"二階堂ヒロ",
-        "act":"1",
-        "chapter":"1",
-        "line":"……。",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"桜羽エマ",
-        "act":"1",
-        "chapter":"1",
-        "line":"ボ、ボク諦めないから！",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"二階堂ヒロ",
-        "act":"1",
-        "chapter":"1",
-        "line":"っ……！",
-        "category":"normal",
-        "note":""
-    },
-    {
-        "character":"桜羽エマ",
-        "act":"1",
-        "chapter":"1",
-        "line":"あうっ",
-        "category":"normal",
-        "note":""
+        "note":"全員同級生だったらすぐ魔女化しそう。"
     },
     {
         "character":"二階堂ヒロ",
@@ -360,12 +104,196 @@
         "note":""
     },
     {
+        "character":"二階堂ヒロ",
+        "act":"1",
+        "chapter":"1",
+        "line":"私が君を嫌いなことは変わらない。この先永遠に。",
+        "category":"normal",
+        "note":"このセリフはかなり印象に残ってる。初見の時はエマ、ヒロに何したんだよって感じだった。"
+    },
+    {
+        "character":"桜羽エマ",
+        "act":"1",
+        "chapter":"1",
+        "line":"これって本物……？",
+        "category":"normal",
+        "note":"初見の時背景の骸骨のことだと思った。ボウガンの伏線だったのね。"
+    },
+    {
+        "character":"城ヶ崎ノア",
+        "act":"1",
+        "chapter":"1",
+        "line":"ふんふふ～ん♪",
+        "category":"normal",
+        "note":"かわいい。"
+    },
+    {
+        "character":"佐渡ココ",
+        "act":"1",
+        "chapter":"1",
+        "line":"ここくさくね？",
+        "category":"normal",
+        "note":"おそらく数多の血を吸ってきたラウンジだ。面構えが違う。"
+    },
+    {
+        "character":"佐伯ミリア",
+        "act":"1",
+        "chapter":"1",
+        "line":"……やれやれ。",
+        "category":"normal",
+        "note":"よれよれだぜ。"
+    },
+    {
+        "character":"橘シェリー",
+        "act":"1",
+        "chapter":"1",
+        "line":"突然牢屋で目覚め！化け物に見張られていて！",
+        "category":"normal",
+        "note":""
+    },
+    {
+        "character":"橘シェリー",
+        "act":"1",
+        "chapter":"1",
+        "line":"なんかすごいことが起こっているのを感じます！高まっちゃいますよね～！",
+        "category":"normal",
+        "note":"この子だけいつもテンションおかしい。"
+    },
+    {
+        "character":"遠野ハンナ",
+        "act":"1",
+        "chapter":"1",
+        "line":"なあにが、高まっちゃいますよね～、ですわ！",
+        "category":"normal",
+        "note":"このころからシェリーボケハンナツッコミは始まっていた。"
+    },
+    {
+        "character":"遠野ハンナ",
+        "act":"1",
+        "chapter":"1",
+        "line":"やべーことになってるんですわ！もっと危機感を持った方が良いんじゃないかしら！？",
+        "category":"normal",
+        "note":"何かわからんがやべーですわっ！"
+    },
+    {
+        "character":"遠野ハンナ",
+        "act":"1",
+        "chapter":"1",
+        "line":"今笑ったのは誰でやがりますの！？",
+        "category":"normal",
+        "note":""
+    },
+    {
+        "character":"蓮見レイア",
+        "act":"1",
+        "chapter":"1",
+        "line":"——いや、すまない。少し変わった喋り方だなと思ってね。",
+        "category":"normal",
+        "note":"初期からハンナの地雷を踏んでる人。"
+    },
+    {
+        "character":"遠野ハンナ",
+        "act":"1",
+        "chapter":"1",
+        "line":"……ふんっ、遠野ハンナですわ。お見知りおきあそばっ……お見知りおきあそばせせ？",
+        "category":"normal",
+        "note":""
+    },
+    {
+        "character":"遠野ハンナ",
+        "act":"1",
+        "chapter":"1",
+        "line":"ちょっとお先によろしいかしら？あなた、レイアさんといったわね。いきなり人のことを笑うのは失礼じゃなくて？",
+        "category":"normal",
+        "note":"直前の詰まりを誤魔化すために突っかかった説。"
+    },
+    {
+        "character":"遠野ハンナ",
+        "act":"1",
+        "chapter":"1",
+        "line":"きっ、気にしてないし……っ",
+        "category":"normal",
+        "note":"絶対気にしてるやつ。"
+    },
+    {
+        "character":"蓮見レイア",
+        "act":"1",
+        "chapter":"1",
+        "line":"その話し方は、ご両親に教わったのかい？",
+        "category":"normal",
+        "note":"なんで深堀りしたし。"
+    },
+    {
+        "character":"遠野ハンナ",
+        "act":"1",
+        "chapter":"1",
+        "line":"もう突っ込まないでいいから！ほっとけ～～っ！！ですわ！！",
+        "category":"normal",
+        "note":"かわいいけど過去考えるとあんまり笑えない。"
+    },
+    {
+        "character":"橘シェリー",
+        "act":"1",
+        "chapter":"1",
+        "line":"はいはーい！私は橘シェリーっていいますっ。事件があるところに私あり！この名探偵にお任せください！",
+        "category":"normal",
+        "note":"音madでよく聞くやつ。"
+    },
+    {
+        "character":"遠野ハンナ",
+        "act":"1",
+        "chapter":"1",
+        "line":"名探偵ぃ？？あなたが？？",
+        "category":"normal",
+        "note":"名探偵ぃ？の言い方好き。"
+    },
+    {
+        "character":"橘シェリー",
+        "act":"1",
+        "chapter":"1",
+        "line":"そうですよ！えっへん！何せミステリマニアですからね！",
+        "category":"normal",
+        "note":"えっへん！とか一々あざといよな。声がいいから騙されちまうわ。"
+    },
+    {
+        "character":"蓮見レイア",
+        "act":"1",
+        "chapter":"1",
+        "line":"実際に何か事件を解決した経験があるのかい？",
+        "category":"normal",
+        "note":""
+    },
+    {
+        "character":"遠野ハンナ",
+        "act":"1",
+        "chapter":"1",
+        "line":"それはまだありませんね！",
+        "category":"normal",
+        "note":"一応、中学の時にいじめっこをつるし上げた同級生を救ったことはあるらしい。"
+    },
+    {
+        "character":"氷上メルル",
+        "act":"1",
+        "chapter":"1",
+        "line":"そ、それで、エマさん、あ、あの、あのあのあの……っけっ、けっ、けっ……。",
+        "category":"normal",
+        "note":"この後けけって笑うメルル概念。"
+    },
+    {
+        "character":"氷上メルル",
+        "act":"1",
+        "chapter":"1",
+        "line":"怪我、しちゃってます……っ",
+        "category":"normal",
+        "note":"優しいんだか優しくないんだかよくわからんくなる。設定資料集ではキツめに言われてたけど。俺も同じだったよメルル…半端なクソ野郎だ"
+    },
+    {
         "character":"橘シェリー",
         "act":"",
         "chapter":"",
         "line":"今日はボクが日直です～！ワクワクしますね～！奥の扉気になりますー！",
         "category":"others",
-        "note":"本当に橘シェリー？"
+        "note":"本当に橘シェリー？誰だお前。"
     },
     {
         "character":"夏目アンアン",
